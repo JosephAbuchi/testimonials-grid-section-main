@@ -1,0 +1,257 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+body {
+  background-color: hsl(210, 46%, 95%);
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.box {
+  display: grid;
+  grid-template: repeat(2, 18rem) / repeat(4, 16rem);
+  gap: 2rem;
+}
+
+h2 {
+  color: hsl(0, 0%, 100%);
+}
+
+.user {
+  display: flex;
+  gap: 1rem;
+}
+
+.user img {
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+}
+
+.user p {
+  margin: 0;
+  color: hsl(0, 0%, 100%);
+}
+
+.user span {
+  margin: 0;
+  font-size: 13px;
+  color: hsl(0, 0%, 81%);
+  opacity: 50%;
+}
+
+.inner-user {
+  margin-top: -6px;
+}
+
+.daniel-clifford {
+  grid-column: 1/3;
+  padding: 2rem;
+  background: hsl(263, 55%, 52%) url(images/bg-pattern-quotation.svg) no-repeat 80% 0;
+  background-size: 110px;
+  border-radius: 10px;
+}
+
+.daniel-clifford h2 {
+  width: 30rem;
+  font-size: 20px;
+}
+
+.daniel-clifford .paragraph {
+  color: hsl(0, 0%, 81%);
+  opacity: 70%;
+  font-size: 13px;
+  width: 30rem;
+  font-weight: 500;
+}
+
+.jonathan-walters {
+  background-color: hsl(217, 19%, 35%);
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.jonathan-walters h2 {
+  width: 12rem;
+  font-size: 20px;
+}
+
+.jonathan-walters .paragraph {
+  color: hsl(0, 0%, 81%);
+  opacity: 70%;
+  font-size: 13px;
+  width: 12rem;
+  font-weight: 500;
+}
+
+.jeanette-harmon {
+  background-color: hsl(0, 0%, 100%);
+  padding: 2rem;
+  grid-column: 1/2;
+  border-radius: 10px;
+}
+
+.jeanette-harmon .inner-user {
+  margin-top: -5px;
+}
+
+.jeanette-harmon .inner-user p {
+  color: hsl(217, 19%, 35%);
+}
+
+.jeanette-harmon .inner-user span {
+  color: hsl(217, 19%, 35%);
+  opacity: 50%;
+}
+
+.jeanette-harmon h2 {
+  width: 12rem;
+  font-size: 20px;
+  color: hsl(217, 19%, 35%);
+}
+
+.jeanette-harmon .paragraph {
+  width: 13rem;
+  font-size: 13px;
+  color: hsl(217, 19%, 35%);
+  opacity: 70%;
+}
+
+.patrick-abrams {
+  background-color: hsl(219, 29%, 14%);
+  padding: 2rem;
+  grid-column: 2/4;
+  border-radius: 10px;
+}
+
+.patrick-abrams h2 {
+  width: 30rem;
+  font-size: 20px;
+  color: hsl(0, 0%, 100%);
+}
+
+.patrick-abrams .paragraph {
+  width: 29rem;
+  font-size: 13px;
+  color: hsl(0, 0%, 81%);
+  opacity: 70%;
+}
+
+.kira-whittle {
+  background-color: hsl(0, 0%, 100%);
+  padding: 2rem;
+  grid-row: 1/3;
+  grid-column: 4/5;
+  border-radius: 10px;
+}
+
+.kira-whittle .inner-user {
+  margin-top: -5px;
+}
+
+.kira-whittle .inner-user p {
+  color: hsl(217, 19%, 35%);
+}
+
+.kira-whittle .inner-user span {
+  color: hsl(217, 19%, 35%);
+  opacity: 50%;
+}
+
+.kira-whittle h2 {
+  width: 12rem;
+  font-size: 20px;
+  color: hsl(217, 19%, 35%);
+}
+
+.kira-whittle .paragraph {
+  width: auto;
+  line-height: 1.5;
+  font-size: 13px;
+  color: hsl(217, 19%, 35%);
+  opacity: 70%;
+}
+
+@media only screen and (max-width:375px) {
+  body {
+    display: block;
+    height: auto;
+    overflow: auto;
+  }
+
+  .box {
+    display: flex;
+    flex-direction: column;
+    padding-top: 4rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 4rem;
+  }
+
+  .daniel-clifford {
+    max-width: 25rem;
+    height: 60vh;
+    padding-left: auto;
+    padding-right: 7rem;
+    background: hsl(263, 55%, 52%) url(images/bg-pattern-quotation.svg) no-repeat 91% 0;
+    background-size: 110px;
+  }
+
+  .daniel-clifford h2 {
+    width: 15.5rem;
+    font-size: 19px;
+  }
+
+  .daniel-clifford .paragraph {
+    width: 15.5rem;
+  }
+
+  .jonathan-walters h2 {
+    width: 15rem;
+  }
+
+  .jonathan-walters .paragraph {
+    width: 17rem;
+  }
+
+  .jeanette-harmon h2 {
+    width: 15rem;
+  }
+
+  .jeanette-harmon .paragraph {
+    width: 16rem;
+  }
+
+  .patrick-abrams h2 {
+    width: 16.5rem;
+  }
+
+  .patrick-abrams .paragraph {
+    width: 16.4rem;
+  }
+
+  .kira-whittle h2 {
+    width: 18rem;
+  }
+
+  .kira-whittle .paragraph {
+    width: 293px;
+    padding-right: 2rem;
+  }
+}
